@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "consult_the_oracle",
+  "version": "${version}",
+  "name": "Consult the Oracle",
+  "description": "Ever at a loss for what to do next?  Let an oracle guide you to victory (or death).",
+  "authors": [
+    "CorvBlimey"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/consult_the_oracle/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.corvblimey.consult_the_oracle.ConsultTheOracle"
+    ],
+    "client": [
+      "com.github.corvblimey.consult_the_oracle.ConsultTheOracleClientInit"
+    ],
+    "modmenu": [
+      "com.github.corvblimey.consult_the_oracle.ConsultTheOracleIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}

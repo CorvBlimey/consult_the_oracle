@@ -1,0 +1,14 @@
+{
+  "text.autoconfig.consult_the_oracle.title": "Config the Oracle",
+  "text.autoconfig.consult_the_oracle.option.addCursed": "Add cursed prompts to the \"all\" oracle",
+  "text.autoconfig.consult_the_oracle.option.useDefaultPrompts": "Include the mod's default set of prompts",
+  "text.autoconfig.consult_the_oracle.option.bonusBuilderPrompts": "Custom builder prompts",
+  "text.autoconfig.consult_the_oracle.option.bonusCursedPrompts": "Custom cursed prompts",
+  "text.autoconfig.consult_the_oracle.option.bonusDaredevilPrompts": "Custom daredevil prompts",
+  "text.autoconfig.consult_the_oracle.option.bonusExplorerPrompts": "Custom explorer prompts",
+  "item.consult_the_oracle.builder_oracle": "Oracle of Hearth and Hands",
+  "item.consult_the_oracle.explorer_oracle": "Oracle of the Wild Yonder",
+  "item.consult_the_oracle.daredevil_oracle": "Oracle of Blades and Wings",
+  "item.consult_the_oracle.cursed_oracle": "Cursed Oracle",
+  "item.consult_the_oracle.all_oracle": "Oracle of Any-All"
+}

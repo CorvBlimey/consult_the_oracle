@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "FEF",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "F": {
+      "tag": "minecraft:flowers"
+    }
+  },
+  "result": {
+    "item": "consult_the_oracle:all_oracle",
+    "count": 1
+  }
+}
+
