@@ -3,7 +3,7 @@
   "id": "consult_the_oracle",
   "version": "${version}",
   "name": "Consult the Oracle",
-  "description": "Ever at a loss for what to do next?  Let an oracle guide you to victory (or death).",
+  "description": "At a loss for what to do next?  The oracles guide you to victory (or death).",
   "authors": [
     "CorvBlimey"
   ],
@@ -14,9 +14,6 @@
   "entrypoints": {
     "main": [
       "com.github.corvblimey.consult_the_oracle.ConsultTheOracle"
-    ],
-    "client": [
-      "com.github.corvblimey.consult_the_oracle.ConsultTheOracleClientInit"
     ],
     "modmenu": [
       "com.github.corvblimey.consult_the_oracle.ConsultTheOracleIntegration"

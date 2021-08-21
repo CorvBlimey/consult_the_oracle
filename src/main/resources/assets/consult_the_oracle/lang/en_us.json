@@ -1,6 +1,7 @@
 {
   "text.autoconfig.consult_the_oracle.title": "Config the Oracle",
   "text.autoconfig.consult_the_oracle.option.addCursed": "Add cursed prompts to the \"all\" oracle",
+  "text.autoconfig.consult_the_oracle.option.giveOracleOnFirstJoin": "Give players an oracle on first join",
   "text.autoconfig.consult_the_oracle.option.useDefaultPrompts": "Include the mod's default set of prompts",
   "text.autoconfig.consult_the_oracle.option.bonusBuilderPrompts": "Custom builder prompts",
   "text.autoconfig.consult_the_oracle.option.bonusCursedPrompts": "Custom cursed prompts",

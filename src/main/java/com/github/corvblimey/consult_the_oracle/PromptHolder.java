@@ -185,7 +185,7 @@ public class PromptHolder {
             "Find all four types of giant fungi in their natural habitat",
             "Try tree-to-tree parkour in the jungle",
             "Repair a destroyed portal in the Nether and see where you end up",
-            "Restore two overworld Nether portals and try to find the route between them in the Nether",
+            "Restore two portals in the Nether and try to find the route between them in the overworld",
             "Get an axolotl buddy in a bucket",
             "Witness the void",
             "Find a rare biome variant",
@@ -197,7 +197,6 @@ public class PromptHolder {
             "Adopt a wolf pack",
             "Reach quintuple-digit coordinates (such as x:10,000)",
             "Fill out an entire map",
-            "Go on a ride downriver at night",
             "Boat on natural ice",
             "Discover a village hidden in a swamp, jungle, forest, or similarly dense biome",
             "Find a stronghold",
@@ -236,7 +235,7 @@ public class PromptHolder {
         List<ArrayList<String>> availablePrompts = new ArrayList<>();
         if(oracleType == OracleItem.OracleType.BUILDER || oracleType == OracleItem.OracleType.ALL) {
             if (CONFIG.useDefaultPrompts) availablePrompts.add(defaultBuildPrompts);
-            availablePrompts.add(CONFIG.bonusBuildPrompts);
+            availablePrompts.add(CONFIG.bonusBuilderPrompts);
         }
         if(oracleType == OracleItem.OracleType.CURSED || oracleType == OracleItem.OracleType.ALL && CONFIG.addCursed) {
             if (CONFIG.useDefaultPrompts) availablePrompts.add(defaultCursedPrompts);
@@ -248,7 +247,7 @@ public class PromptHolder {
         }
         if(oracleType == OracleItem.OracleType.EXPLORER || oracleType == OracleItem.OracleType.ALL) {
             if (CONFIG.useDefaultPrompts) availablePrompts.add(defaultExplorePrompts);
-            availablePrompts.add(CONFIG.bonusExplorePrompts);
+            availablePrompts.add(CONFIG.bonusExplorerPrompts);
         }
 
         int numPrompts = 0;

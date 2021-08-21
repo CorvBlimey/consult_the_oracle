@@ -3,6 +3,9 @@ package com.github.corvblimey.consult_the_oracle;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -43,6 +46,15 @@ public class ConsultTheOracle implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "daredevil_oracle"), DAREDEVIL_ORACLE);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "explorer_oracle"), EXPLORER_ORACLE);
         oracleOrder = new ArrayList<>(Arrays.asList(ALL_ORACLE, BUILD_ORACLE, DAREDEVIL_ORACLE, EXPLORER_ORACLE, CURSED_ORACLE, ALL_ORACLE));
+
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
+            // Add oracle to inventory on first join, if not deactivated in config
+            if(!CONFIG.giveOracleOnFirstJoin){return;}
+            if(server.getPlayerManager().loadPlayerData(handler.player) == null) {
+                handler.player.giveItemStack(new ItemStack(ALL_ORACLE));
+            }
+        });
+
     }
 
     public static void log(Level level, String message){
