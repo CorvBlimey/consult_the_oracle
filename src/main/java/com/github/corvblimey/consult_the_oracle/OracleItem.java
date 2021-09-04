@@ -12,8 +12,6 @@ import net.minecraft.sound.SoundEvents;
 
 public class OracleItem extends Item {
 
-    // Empty array list will provide a helpful warning to players/pack makers
-
     public enum OracleType { ALL, BUILDER, CURSED, DAREDEVIL, EXPLORER};
     private final OracleType thisOracleType;
 
@@ -34,7 +32,7 @@ public class OracleItem extends Item {
             } else {
                 Text msg = PromptHolder.getPrompt(thisOracleType, world.random);
                 user.world.playSoundFromEntity(null, user, SoundEvents.BLOCK_NOTE_BLOCK_CHIME, user.getSoundCategory(), 0.5F, world.random.nextFloat() + 0.5F);
-                user.sendSystemMessage(msg, Util.NIL_UUID);
+                user.sendMessage(msg, true);
             }
         }
         return TypedActionResult.success(itemStack);
